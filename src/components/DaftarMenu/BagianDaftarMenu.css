@@ -1,0 +1,90 @@
+.DaftarMenu{
+    padding-top: 5rem;
+}
+
+.Judul{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Pacifico';
+}
+
+.filter{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search {
+    border: 2px solid #A2D2A4;
+    border-radius: 20px;
+    padding: 5px 15px; 
+    font-size: 14px;
+    color: #A2D2A4;
+  }
+
+.barisFilter{
+    display: flex;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 1px -2px #AAAAAA; 
+}
+
+.button, .buttonKanan {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+}
+
+.buttonTambah{
+    background-color: white;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: #9DC08B;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 10px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+}
+
+.buttonAZ{
+    background-color: white;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: #9DC08B;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    width: 6.5rem;
+}
+
+/* Sidebar */
+.PilihanMenu{
+    padding-top: 3rem;
+}
+
+.Sidebar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.buttonSidebar {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 18px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    max-width: 17rem;
+    width: 100%; 
+    text-align: left;
+}

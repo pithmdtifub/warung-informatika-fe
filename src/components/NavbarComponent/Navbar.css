@@ -1,0 +1,39 @@
+.navbar {
+    font-size: 27px;
+    font-family: Calibri;
+    text-align: center;
+    box-shadow: 0 5px 5px -2px #ccc; 
+    transition: box-shadow 0.5s ease;
+    display: flex;
+    justify-content: center;
+}
+  
+.navbar-brand {
+    font-size: 27px;
+    font-family: Verdana;
+    margin: 0 auto;
+}
+  
+.button {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 15px;
+    margin-right: 0.5rem;
+}
+
+.button {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 15px;
+    margin-right: 0.5rem;
+}
+
+
