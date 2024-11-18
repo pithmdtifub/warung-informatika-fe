@@ -27,7 +27,6 @@ function DaftarMenu() {
           <Button className="buttonKanan">Default</Button>
           <Button className="buttonAZ">A - Z</Button>
         </Col>
-
       </Row>
     </Container>
   );
