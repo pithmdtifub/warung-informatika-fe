@@ -20,7 +20,7 @@ function DaftarMenu() {
           <Row>
             <Col xs={12} sm={6} md={4} className="mb-4 isiCard">
               <Card className='isiCard' style={{ width: '100%' }}>
-                <Card.Img className='img' variant="top" src="Kotak Putih Abu.jpg" />
+                <Card.Img className='img' variant="top" src="src/assets/Kotak Putih Abu.png" />
                 <Card.Body>
                   <Card.Title className='judulCard'>Nasi Goreng</Card.Title>
                   <Card.Text className='hargaCard'>
@@ -35,7 +35,7 @@ function DaftarMenu() {
 
             <Col xs={12} sm={6} md={4} className="mb-4 isiCard">
               <Card className='isiCard' style={{ width: '100%' }}>
-                <Card.Img className='img' variant="top" src="Kotak Putih Abu.jpg" />
+                <Card.Img className='img' variant="top" src="src/assets/Kotak Putih Abu.png" />
                 <Card.Body>
                   <Card.Title className='judulCard'>Nasi Ayam Bakar</Card.Title>
                   <Card.Text className='hargaCard'>
@@ -50,7 +50,7 @@ function DaftarMenu() {
 
             <Col xs={12} sm={6} md={4} className="mb-4 isiCard">
               <Card className='isiCard' style={{ width: '100%' }}>
-                <Card.Img className='img' variant="top" src="Kotak Putih Abu.jpg" />
+                <Card.Img className='img' variant="top" src="src/assets/Kotak Putih Abu.png" />
                 <Card.Body>
                   <Card.Title className='judulCard'>Nasi Ayam Geprek</Card.Title>
                   <Card.Text className='hargaCard'>
@@ -65,7 +65,7 @@ function DaftarMenu() {
 
             <Col xs={12} sm={6} md={4} className="mb-4 isiCard">
               <Card className='isiCard' style={{ width: '100%' }}>
-                <Card.Img className='img' variant="top" src="Kotak Putih Abu.jpg" />
+                <Card.Img className='img' variant="top" src="src/assets/Kotak Putih Abu.png" />
                 <Card.Body>
                   <Card.Title className='judulCard'>Nasi Padang Rendang</Card.Title>
                   <Card.Text className='hargaCard'>
