@@ -8,7 +8,7 @@ import './BagianDaftarMenu.css'
 function DaftarMenu() {
   return (
     <>
-    <div className="bottom-section">
+    <div className="section-Judul">
       <Container fluid className="bottom-section d-flex flex-row py-3 align-items-center">
         <Row className="w-100 align-items-center">
           <Col xs={12} md={6} className="d-flex flex-column align-items-center">
@@ -30,7 +30,7 @@ function DaftarMenu() {
 
     <Container className="DaftarMenu">
       <Row>
-        <Col className="Judul">Daftar Menu</Col>
+        <Col className="Judul barisFilter">Daftar Menu</Col>
       </Row>
       <Row className="barisFilter">
         <Col xs="auto" className="filter">Filter :</Col>
