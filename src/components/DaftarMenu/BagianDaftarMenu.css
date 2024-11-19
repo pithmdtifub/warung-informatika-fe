@@ -88,3 +88,32 @@
     width: 100%; 
     text-align: left;
 }
+
+/* Bagian card */
+.isiCard{
+    border-radius: 1.875rem;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+  }
+
+.judulCard{
+    font-size: 20px;
+}
+
+.hargaCard{
+    font-size: 15px;
+    color: #609966;
+    margin: 0;
+}
+
+.penjelasanCard{
+    font-size: 12px;
+    color: #AAAAAA;
+    padding: 0;
+}

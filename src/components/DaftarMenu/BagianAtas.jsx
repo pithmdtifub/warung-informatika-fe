@@ -7,6 +7,29 @@ import './BagianDaftarMenu.css'
 
 function DaftarMenu() {
   return (
+    <>
+    <div className="bottom-section">
+      <Container fluid className="d-flex flex-row align-items-center justify-content-between py-3">
+        <Row className="w-100 align-items-center">
+          <Col xs={12} md={6} className="d-flex flex-column text-center text-md-start">
+            <h1 className="main-title">Warung Informatika</h1>
+            <div className="icon-row d-flex justify-content-center justify-content-md-start mt-2">
+              {/* Replace these with actual icons or images */}
+              <img src="icon1.png" alt="Icon 1" className="mx-2" />
+              <img src="icon2.png" alt="Icon 2" className="mx-2" />
+              <img src="icon3.png" alt="Icon 3" className="mx-2" />
+            </div>
+          </Col>
+          <Col xs={12} md={6} className="description-container text-center text-md-start">
+            <p className="description">
+              Warung Informatika adalah sebuah program kerja departemen Bisnis Himpunan Mahasiswa Departemen Teknik Informatika.
+              Warung Informatika menjual berbagai jenis jajanan dan minuman ringan.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+
     <Container className="DaftarMenu">
       <Row>
         <Col className="Judul">Daftar Menu</Col>
@@ -29,6 +52,7 @@ function DaftarMenu() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 
