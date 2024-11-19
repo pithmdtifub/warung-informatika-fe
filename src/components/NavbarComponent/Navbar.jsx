@@ -7,7 +7,7 @@ function navbarWarungInformatika() {
   
   return (
     <>
-    <Navbar className="navbar" expand="lg">
+    <Navbar className="navbar sticky-top" expand="lg" bg="light" data-bs-theme="light">
       <Container fluid className="d-flex">
           <Navbar.Brand className="navbar-brand">Warung Informatika</Navbar.Brand>
           <Button className="button">Login</Button>
