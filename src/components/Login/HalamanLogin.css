@@ -1,0 +1,72 @@
+.judul{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.background {
+    background-image: url('src/assets/Foto Makanan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 50px;
+    border-radius: 50px;
+    height: 33rem;
+    width: 92%;
+    opacity: 0.8;
+}
+
+.card-login{
+    margin: auto;
+    border-radius: 30px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; 
+}
+
+.login{
+    margin: auto;
+    text-align: center;
+    font-family: 'pacifico';
+    font-size: 2.3rem;
+    color: black;
+}
+
+.input-email-pw{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    border-color: #133E87;;
+    font-family: "Poppins";
+}
+
+.button-submit{
+    border-radius: 30px;
+    background-color: #9DC08B;
+    border-color: #9DC08B;
+    font-family: "Poppins";
+    display: block;
+    margin: auto;
+}
+
+.input-icon-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-email-pw {
+    padding-right: 40px;
+}
+
+.icon-inside-input-halaman-login {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #133E87;
+    pointer-events: none;
+}
+  
