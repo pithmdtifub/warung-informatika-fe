@@ -1,0 +1,238 @@
+.section-judul {
+    background-image: url('src/assets/Kotak Putih Abu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.main-title{
+    font-size: 3rem;
+    padding-left: 3rem;
+}
+
+.semua-gambar{
+    padding-left: 3rem;
+}
+
+.gambar-bawah-navbar1{
+    width: 30px;
+    height: 50px;
+}
+
+.gambar-bawah-navbar2{
+    width: 58px;
+    height: 58px;
+}
+
+.gambar-bawah-navbar3{
+    width: 50px;
+    height: 50px;
+}
+
+.description{
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: justify;
+    padding-inline: 5rem;
+}
+
+.daftar-menu{
+    padding-top: 5rem;
+}
+
+.judul-daftar-menu{
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    font-family: 'Pacifico';
+}
+
+.search {
+    border: 2px solid #A2D2A4; 
+    border-radius: 20px; 
+    padding-left: 2.5rem; 
+    font-size: 14px; 
+    width: 18rem;
+    box-sizing: border-box;
+}
+
+.input-icon-wrapper {
+    position: relative; 
+    width: 100%;
+}
+
+.icon-inside-input {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #AAAAAA !important;
+    font-size: 1rem;;
+}
+
+.baris-filter{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 1px -2px #AAAAAA; 
+    border-top: 1px solid #AAAAAA;
+}
+
+.button-default {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #AAAAAA;
+    color: #AAAAAA;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    margin-left: 0 !important;
+}
+
+.button-default.active {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    margin-left: 0 !important;
+}
+
+.button-az {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #AAAAAA;
+    color: #AAAAAA;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    width: 4.4rem;
+}
+
+.button-az.active {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    width: 4.4rem;
+}
+
+/* Sidebar */
+.pilihan-menu{
+    padding-top: 3rem;
+}
+
+.section-sidebar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.button-sidebar {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #AAAAAA;
+    color: #AAAAAA;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 18px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    max-width: 17rem;
+    width: 100%; 
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-sidebar.active {
+    background-color: #9DC08B;
+    border-radius: 20px;
+    border-color: #9DC08B;
+    color: white;
+    padding:  0.3rem 1.15rem;
+    font-family: Verdana;
+    font-size: 18px;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.5s ease;
+    max-width: 17rem;
+    width: 100%; 
+    text-align: left;
+}
+
+/* Bagian card */
+.section-card{
+    border-radius: 1.875rem;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.section-card.active {
+    height: auto; /* Biarkan tinggi card menyesuaikan dengan konten */
+}
+
+.section-card:hover:not(.active) {
+    transform: scale(1.03);
+  }
+  
+.section-card.active {
+    border: 2px solid #007bff;
+  }
+
+.img-card {
+    width: 100%;
+    max-height: 12rem;
+    object-fit: cover;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+  }
+
+.card-title{
+    font-size: 20px;
+}
+
+.card-price{
+    font-size: 15px;
+    color: #609966;
+    margin: 0;
+}
+
+.card-description{
+    font-size: 12px;
+    color: #AAAAAA;
+    padding: 0;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.section-card.active .card-description {
+    white-space: normal; /* Tampilkan teks dalam beberapa baris */
+    overflow: visible; /* Izinkan teks melampaui batas */
+    text-overflow: unset; /* Hilangkan elipsis untuk deskripsi penuh */
+}
+
+/* Bagian footer */
+.footer{
+    display: flex;
+    background-color: #9DC08B;
+    height: 147px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
