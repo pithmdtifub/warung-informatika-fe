@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Card from 'react-bootstrap/Card';
+import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
 import './BagianDaftarMenu.css'
 import { Search } from 'lucide-react';
 
@@ -18,6 +13,13 @@ function DaftarMenu() {
       Deskripsi : 'Nasi goreng gurih manis khas Malang dengan topping telur orak arik dan sayuran',
       Kategori: 'Makanan Berat',
     },  
+    {
+      NamaMenu : 'Nasi Ayam Curry',
+      Harga : 'Rp15.000,00',
+      Gambar : '/src/assets/kotak-putih-abu.png',
+      Deskripsi : 'Nasi goreng gurih manis khas Malang dengan topping telur orak arik dan sayuran',
+      Kategori: 'Makanan Berat',
+    }, 
     {
       NamaMenu : 'Nasi Ayam Bakar',
       Harga : 'Rp13.000,00',
@@ -47,52 +49,48 @@ function DaftarMenu() {
   const [activeCategory, setActiveCategory] = useState('Semua');
   const [activeSort, setActiveSort] = useState('Default');
   const [activeCard, setActiveCard] = useState(null);
+  const [searchText, setSearchText] = useState('');
+
+  const filterAndSortMenus = (category, sort, search) => {
+    let filteredMenus = Menu.filter((item) =>
+      item.NamaMenu.toLowerCase().includes(search.toLowerCase())
+    );
+
+    if (category !== 'Semua') {
+      filteredMenus = filteredMenus.filter((item) => item.Kategori === category);
+    }
+
+    if (sort === 'A-Z') {
+      filteredMenus = filteredMenus.sort((a, b) => a.NamaMenu.localeCompare(b.NamaMenu));
+    }
+
+    return filteredMenus;
+  };
+
+  const handleSearch = (text) => {
+    setSearchText(text);
+    const filteredMenus = filterAndSortMenus(activeCategory, activeSort, text);
+    setDisplayedMenus(filteredMenus);
+  };
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
-
-    let filteredMenus = Menu;
-    if (category !== 'Semua') {
-      filteredMenus = Menu.filter((item) => item.Kategori === category);
-    }
-  
-    if (activeSort === 'A-Z') {
-      filteredMenus = [...filteredMenus].sort((a, b) => a.NamaMenu.localeCompare(b.NamaMenu));
-    }
+    const filteredMenus = filterAndSortMenus(category, activeSort, searchText);
     setDisplayedMenus(filteredMenus);
   };
 
   const handleSortDefault = () => {
     setActiveSort('Default');
-
-    const filteredMenus =
-    activeCategory === 'Semua'
-      ? Menu
-      : Menu.filter((item) => item.Kategori === activeCategory);
-
-  setDisplayedMenus(filteredMenus);
-};
+    const filteredMenus = filterAndSortMenus(activeCategory, 'Default', searchText);
+    setDisplayedMenus(filteredMenus);
+  };
 
   const handleSortAZ = () => {
     setActiveSort('A-Z');
-
-  const filteredMenus =
-    activeCategory === 'Semua'
-      ? Menu
-      : Menu.filter((item) => item.Kategori === activeCategory);
-
-  const sorted = [...filteredMenus].sort((a, b) => a.NamaMenu.localeCompare(b.NamaMenu));
-  setDisplayedMenus(sorted);
-};
-
-  const handleSearch = (searchText) => {
-    const filtered = Menu.filter((item) =>
-      item.NamaMenu.toLowerCase().includes(searchText.toLowerCase())
-    );
-    setDisplayedMenus(filtered);
-    setActiveSort(''); 
-    setActiveCategory('Semua'); 
+    const filteredMenus = filterAndSortMenus(activeCategory, 'A-Z', searchText);
+    setDisplayedMenus(filteredMenus);
   };
+
 
   const handleCardClick = (index) => {
     console.log('Clicked Card Index:', index); 
@@ -116,7 +114,7 @@ function DaftarMenu() {
         <Col xs="auto" className="ms-auto d-flex align-items-center">
           <div className="input-icon-wrapper">
             <Search className="icon-inside-input"/>
-            <Form.Control type="text" placeholder="Ketik disini" className="search" onChange={(e) => handleSearch(e.target.value)}/>
+            <Form.Control type="text" placeholder="Ketik disini" className="search" value={searchText} onChange={(e) => handleSearch(e.target.value)}/>
           </div>
         </Col>
       </Row>
