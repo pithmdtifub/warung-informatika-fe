@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 import './BagianDaftarMenu.css'
 
 
@@ -13,9 +11,9 @@ function DaftarMenu() {
           <Col xs={12} md={5} className="d-flex flex-column align-items-center">
             <h1 className="main-title">Warung Informatika</h1>
             <div className="semua-gambar d-flex mt-3">
-              <img src="src/assets/Logo Jati Asta.png" alt="Logo Jati Asta" className="gambar-bawah-navbar1 mx-2" />
-              <img src="src/assets/Logo HMDTIF tanpa nama.png" alt="Logo HMDTIF" className="gambar-bawah-navbar2 mx-2" />
-              <img src="src/assets/Logo DTIF.png" alt="Logo DTIF" className="gambar-bawah-navbar3 mx-2" />
+              <img src="src/assets/logo-jati-asta.png" alt="Logo Jati Asta" className="gambar-bawah-navbar1 mx-2" />
+              <img src="src/assets/logo-hmdtif.png" alt="Logo HMDTIF" className="gambar-bawah-navbar2 mx-2" />
+              <img src="src/assets/logo-dtif.png" alt="Logo DTIF" className="gambar-bawah-navbar3 mx-2" />
             </div>
           </Col>
           <Col xs={12} md={7}>
