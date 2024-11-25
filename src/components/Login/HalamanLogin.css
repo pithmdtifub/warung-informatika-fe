@@ -5,7 +5,7 @@
 }
 
 .background {
-    background-image: url('src/assets/Foto Makanan.png');
+    background-image: url('src/assets/foto-makanan.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,8 @@
 .card-login{
     margin: auto;
     border-radius: 30px;
-    height: 20rem;
+    height: 23rem;
+    width: 23rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,17 +29,16 @@
 }
 
 .login{
-    margin: auto;
-    text-align: center;
     font-family: 'pacifico';
-    font-size: 2.3rem;
-    color: black;
+    font-size: 3rem !important;
+    color: #000000;
 }
 
 .input-email-pw{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 30px;
+    border-width: 2px;
     border-color: #133E87;;
     font-family: "Poppins";
 }
