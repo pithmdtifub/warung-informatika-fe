@@ -1,5 +1,5 @@
 .section-judul {
-    background-image: url('src/assets/Kotak Putih Abu.png');
+    background-image: url('src/assets/kotak-putih-abu.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@
 }
 
 .section-card.active {
-    height: auto; /* Biarkan tinggi card menyesuaikan dengan konten */
+    height: auto; 
 }
 
 .section-card:hover:not(.active) {
@@ -219,9 +219,9 @@
 }
 
 .section-card.active .card-description {
-    white-space: normal; /* Tampilkan teks dalam beberapa baris */
-    overflow: visible; /* Izinkan teks melampaui batas */
-    text-overflow: unset; /* Hilangkan elipsis untuk deskripsi penuh */
+    white-space: normal; 
+    overflow: visible; 
+    text-overflow: unset; 
 }
 
 /* Bagian footer */
