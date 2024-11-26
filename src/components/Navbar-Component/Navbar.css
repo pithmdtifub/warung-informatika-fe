@@ -8,11 +8,18 @@
     justify-content: center;
 }
   
-.navbar-brand {
+.navbar-brand-login {
     font-size: 27px;
     font-family: Verdana;
     margin: auto;
-    padding-left: 4rem;
+    padding-left: 6rem;
+}
+
+.navbar-brand-logout {
+    font-size: 27px;
+    font-family: Verdana;
+    margin: auto;
+    padding-left: 8rem;
 }
   
 .button-login {
