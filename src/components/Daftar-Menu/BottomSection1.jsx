@@ -147,7 +147,6 @@ function DaftarMenu() {
       </Row>
     </Container>
 
-    {/* Footer */}
     <div className='footer'>
       <p >Copyright © Staff Muda PIT 2024 | All Rights Reserved</p>
     </div>
