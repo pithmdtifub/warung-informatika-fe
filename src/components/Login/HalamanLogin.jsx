@@ -1,8 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Container, Row, Form, Button, Card } from 'react-bootstrap';
 import { User } from 'lucide-react';
 import { Eye } from 'lucide-react';
 import './HalamanLogin.css'
@@ -22,11 +18,11 @@ function BagianLogin() {
             <Form>
                 <Form.Group className="mb-3">
                     <div className="input-icon-wrapper">
-                        <Form.Control className="input-email-pw" type="username" placeholder="Username" required/>
+                        <Form.Control className="input-usn-pw" type="username" placeholder="Username" required/>
                         <User className="icon-inside-input-halaman-login" />
                     </div>
                     <div className="input-icon-wrapper">
-                        <Form.Control className="input-email-pw" type="password" placeholder="Password" required/>
+                        <Form.Control className="input-usn-pw" type="password" placeholder="Password" required/>
                         <Eye className="icon-inside-input-halaman-login" />
                     </div>
                     <Button type="submit" className="button-submit">Submit</Button>
