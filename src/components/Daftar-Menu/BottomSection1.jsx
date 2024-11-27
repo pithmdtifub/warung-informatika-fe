@@ -14,13 +14,6 @@ function DaftarMenu() {
       Kategori: 'Makanan Berat',
     },  
     {
-      NamaMenu : 'Nasi Ayam Curry',
-      Harga : 'Rp15.000,00',
-      Gambar : '/src/assets/kotak-putih-abu.png',
-      Deskripsi : 'Nasi goreng gurih manis khas Malang dengan topping telur orak arik dan sayuran',
-      Kategori: 'Makanan Berat',
-    }, 
-    {
       NamaMenu : 'Nasi Ayam Bakar',
       Harga : 'Rp13.000,00',
       Gambar : '/src/assets/kotak-putih-abu.png',
@@ -154,7 +147,6 @@ function DaftarMenu() {
       </Row>
     </Container>
 
-    {/* Footer */}
     <div className='footer'>
       <p >Copyright © Staff Muda PIT 2024 | All Rights Reserved</p>
     </div>

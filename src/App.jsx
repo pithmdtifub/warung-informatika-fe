@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar-Component/Navbar.jsx'
+import Navbar from './components/Navbar-Component/NavbarLogin.jsx'
 import TopSection from './components/Daftar-Menu/TopSection1.jsx'
 import BottomSection from './components/Daftar-Menu/BottomSection1.jsx'
 
