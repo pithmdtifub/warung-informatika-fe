@@ -69,4 +69,11 @@
     color: #133E87;
     pointer-events: none;
 }
+
+.text-error{
+    color: red;
+    margin-top: 0 !important;
+    font-size: 0.8rem;
+    text-align: center;
+}
   
