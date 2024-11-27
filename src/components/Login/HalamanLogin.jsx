@@ -65,13 +65,13 @@ function BagianLogin() {
                 <Form.Group className="mb-3">
                     <div className="input-icon-wrapper">
                         <Form.Control className="input-usn-pw" type="username" placeholder="Username" required value={username} onChange={(e) => setUsername(e.target.value)}/>
-                        <User className="icon-inside-input-halaman-login" />
+                        <User className="icon-inside-input-halaman-login user-icon" />
                     </div>
                     <div className="input-icon-wrapper">
                         <Form.Control className="input-usn-pw" type={showPassword ? "text" : "password"} placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)}/>
-                        {showPassword ? (<EyeClosed onClick={() => setShowPassword(false)} style={{ cursor: "pointer" }}/>
+                        {showPassword ? (<Eye className="icon-inside-input-halaman-login" onClick={() => setShowPassword(!showPassword)} style={{ cursor: "pointer" }}/>
                         ) : (
-                        <Eye className="icon-inside-input-halaman-login" onClick={() => setShowPassword(true)} style={{ cursor: "pointer" }}/>)}
+                        <EyeClosed className="icon-inside-input-halaman-login" onClick={() => setShowPassword(!showPassword)} style={{ cursor: "pointer" }}/>)}
                     </div>            
                         <Button type="submit" className="button-submit">Submit</Button>
                         {errorMessage && (<small className="text-error mt-2 d-block text-center">{errorMessage}</small>)}

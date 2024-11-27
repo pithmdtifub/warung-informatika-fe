@@ -37,7 +37,7 @@
 .input-usn-pw{ 
     margin-bottom: 1rem;
     border-radius: 30px;
-    border-width: 2px;
+    border-width: 2px; 
     border-color: #133E87;;
     font-family: "Poppins";
     padding-right: 4.2rem;
@@ -67,6 +67,11 @@
     top: 50%;
     transform: translateY(-50%);
     color: #133E87;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.user-icon {
     pointer-events: none;
 }
 
