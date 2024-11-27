@@ -1,4 +1,5 @@
 import { Container, Row, Form, Button, Card } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import { User } from 'lucide-react';
 import { Eye } from 'lucide-react';
 import './HalamanLogin.css'
@@ -25,7 +26,9 @@ function BagianLogin() {
                         <Form.Control className="input-usn-pw" type="password" placeholder="Password" required/>
                         <Eye className="icon-inside-input-halaman-login" />
                     </div>
-                    <Button type="submit" className="button-submit">Submit</Button>
+                    <Link to={'/dashboard-admin'}>
+                        <Button type="submit" className="button-submit">Submit</Button>
+                    </Link>
                 </Form.Group>
             </Form>
             </Card>
