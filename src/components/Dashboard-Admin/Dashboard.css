@@ -477,6 +477,14 @@
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
+    .img-card {
+        width: 180px !important;
+        max-height: 130px !important;
+        object-fit: cover;
+        border-top-left-radius: 1.875rem;
+        border-top-right-radius: 1.875rem;
+    }
+
     .footer{
         display: flex;
         background-color: #9DC08B;
