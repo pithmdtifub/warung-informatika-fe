@@ -137,7 +137,7 @@ function DaftarMenu() {
                   <Card.Body>
                     <Card.Title className='card-title'>{item.NamaMenu}</Card.Title>
                     <Card.Text className='card-price'>{item.Harga}</Card.Text>
-                    <Card.Text className='card-description'>  {activeCard === index ? item.Deskripsi : item.Deskripsi.split(' ').length > 12 ? `${item.Deskripsi.split(' ').slice(0, 12).join(' ')}...` : item.Deskripsi}</Card.Text>
+                    <Card.Text className='card-description'>  {activeCard === index ? item.Deskripsi : item.Deskripsi.length > 70 ? `${item.Deskripsi.substring(0, 70)}...` : item.Deskripsi}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

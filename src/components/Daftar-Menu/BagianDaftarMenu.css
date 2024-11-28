@@ -236,3 +236,223 @@
     align-items: center;
     color: white;
 }
+
+@media (max-width: 480px) {
+    .main-title{
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+
+    .description{
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 1rem;
+        text-align: center;
+        padding-left: 30px !important;
+        padding-inline: 0.5rem;
+    }
+
+    .daftar-menu{
+        padding-top: 3rem;
+    }
+    
+    .judul-daftar-menu{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        font-family: 'Pacifico';
+        text-align: center;
+    }
+
+    .baris-filter{
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        box-shadow: 0 3px 1px -2px #AAAAAA; 
+        border-top: none !important;
+    }
+
+    .search {
+        border: 2px solid #A2D2A4;
+        border-radius: 20px;
+        padding-left: 2.5rem; 
+        font-size: 14px;
+        width: 24rem;
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+
+    .icon-inside-input {
+        position: absolute;
+        left: 10px;
+        top: 65%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #AAAAAA !important;
+        font-size: 1rem;;
+    }
+
+    .button-default {
+        background-color: #ffffff;
+        border-radius: 20px;
+        border-color: #AAAAAA;
+        color: #AAAAAA;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        margin-left: 1rem !important;
+    }
+
+    .baris-filter .button-default {
+        margin-left: 6.5rem !important;
+    }
+    
+    .button-default.active {
+        background-color: #9DC08B;
+        border-radius: 20px;
+        border-color: #9DC08B;
+        color: white;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        margin-left: 1rem !important;
+    }
+
+    .baris-filter .button-default.active  {
+        margin-left: 6.5rem !important;
+    }
+    
+    .button-az {
+        background-color: #ffffff;
+        border-radius: 20px;
+        border-color: #AAAAAA;
+        color: #AAAAAA;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        width: 4.4rem;
+    }
+    
+    .button-az.active {
+        background-color: #9DC08B;
+        border-radius: 20px;
+        border-color: #9DC08B;
+        color: white;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        width: 4.4rem;
+    }
+
+    .pilihan-menu{
+        padding-top: 1.5rem !important;
+    }
+    
+    .section-sidebar {
+        display: flex;
+        flex-wrap: nowrap !important;
+        padding-bottom: 1rem !important; 
+    }
+    
+    .button-sidebar {
+        background-color: #ffffff;
+        border-radius: 20px;
+        border-color: #AAAAAA;
+        color: #AAAAAA;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 10px !important;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        max-width: 5rem !important;
+        width: 100%;  
+        text-align: center !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .button-sidebar.active {
+        background-color: #9DC08B;
+        border-radius: 20px;
+        border-color: #9DC08B;
+        color: white;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 18px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        max-width: 17rem;
+        width: 100%; 
+        text-align: left;
+    }
+
+    .section-card{
+        border-radius: 1.875rem;
+        transition: transform 0.3s ease, height 0.3s ease;
+        max-width: 9.5rem !important;
+    }
+    
+    .section-card.active {
+        height: auto; 
+    }
+    
+    .section-card:hover:not(.active) {
+        transform: scale(1.03);
+      }
+      
+    .section-card.active {
+        border: 2px solid #007bff;
+      }
+    
+    .img-card {
+        width: 100%;
+        max-height: 5rem !important;
+        object-fit: cover;
+        border-top-left-radius: 1.875rem;
+        border-top-right-radius: 1.875rem;
+      }
+    
+    .card-title{
+        font-size: 12px !important;
+    }
+    
+    .card-price{
+        font-size: 10px !important;
+        color: #609966;
+        margin: 0;
+    }
+    
+    .card-description{
+        font-size: 8px !important;
+        color: #AAAAAA;
+        padding: 0;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    
+    .section-card.active .card-description {
+        white-space: normal; 
+        overflow: visible; 
+        text-overflow: unset; 
+    }
+
+    .footer{
+        display: flex;
+        background-color: #9DC08B;
+        height: 100px !important;
+        text-align: center;
+        font-size: 1rem !important;
+        margin-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+  }
