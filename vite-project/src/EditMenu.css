@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 145px 230px;
+  display: flex items-start;
+  place-items: left;
+  min-width: 320px;
+  min-height: 100vh;
+
+  top: 145px;
+  left: 230px;
+  gap: 40px;
+  opacity: 0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+h2{
+  font-family: 'pacifico';
+  font-size: 2.2rem;
+  color:black;
+}
+
+div{
+	font-family: 'Poppins';
+	font-weight: 400;
+  color: black;
+}
+
+label{
+  font-size:medium;
+  margin-bottom: auto;
+}
+
+input{
+  margin-top: 9px;
+  width: 420px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-family: 'Poppins';
+  font-size:75%;
+  border: 0.12rem solid black;
+  color:#AAAAAA;
+  border-radius: 14px;
+}
+
+input:focus{
+  color: black;
+}
+
+#submit{
+  background-color: white;
+}
+
+button{
+	border: 0.13rem solid #9DC08B;
+	font-size: 10px;
+  font-family: "Poppins";
+  border-radius: 20px;
+  font-size:75%;
+  background-color:white;
+  color: #AAAAAA;
+  margin-right: 7px;
+}
+
+.category-button.active {
+  background-color: #9DC08B; /* Background color when active */
+  color: white; /* Text color when active */
+  border: 0.13rem solid #9DC08B;
+}
+
+.inline{
+  margin: 13px 0px 20px 0px;
+}
+
+.kategori{
+  border: 0.14rem solid #9DC08B;
+  font-size: 1rem;
+  width: auto;
+  height: 29px;
+  margin: 12px 7px 20px 0px;
+  border-radius: 14px;
+  font-size:73%;
+}
+
+#menuDescription{
+  width: 730px;
+}
+
+img{
+  margin: 15px 0px 20px 0px;
+}
+
+.red{
+	background-color: #CF4B4B;
+	color: #FFFFFF;
+  border-color: #CF4B4B;
+}
+
+.green{
+	background-color: #9DC08B;
+	color: #FFFFFF;
+}
