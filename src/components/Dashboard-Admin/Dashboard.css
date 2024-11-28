@@ -216,6 +216,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    min-height: 20rem;
 }
 
 .card-plus{
@@ -440,6 +441,18 @@
         max-width: 9.3rem !important;
         cursor: pointer;
         position: relative;
+    }
+
+    .section-card-plus{
+        height: 100%;
+        cursor: pointer;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        min-height: 12rem;
     }
 
     .card-edit-text {
