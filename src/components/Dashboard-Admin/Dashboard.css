@@ -140,7 +140,7 @@
 .section-card-dashboard{
     border-radius: 1.875rem;
     transition: transform 0.3s ease, height 0.3s ease;
-    min-height: 20rem;
+    max-height: 20rem;
     height: auto;
     cursor: pointer;
     position: relative;
@@ -284,3 +284,208 @@
     align-items: center;
     color: white;
 }
+
+
+@media (max-width: 480px) {
+    .menu-list{
+        padding-top: 3rem;
+    }
+    
+    .menu-list-title{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        font-family: 'Pacifico';
+        text-align: center;
+    }
+
+    .baris-filter{
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        box-shadow: 0 3px 1px -2px #AAAAAA; 
+        border-top: none !important;
+    }
+
+    .search-bar {
+        border: 2px solid #A2D2A4;
+        border-radius: 20px;
+        padding-left: 2.5rem; 
+        font-size: 14px;
+        width: 24rem;
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+
+    .icon-inside-input-dashboard {
+        position: absolute;
+        left: 10px;
+        top: 65%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #AAAAAA !important;
+        font-size: 1rem;;
+    }
+
+    .button-default {
+        background-color: #ffffff;
+        border-radius: 20px;
+        border-color: #AAAAAA;
+        color: #AAAAAA;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        margin-left: 1rem !important;
+    }
+
+    .baris-filter .button-default {
+        margin-left: 6.5rem !important;
+    }
+    
+    .button-default.active {
+        background-color: #9DC08B;
+        border-radius: 20px;
+        border-color: #9DC08B;
+        color: white;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        margin-left: 1rem !important;
+    }
+
+    .baris-filter .button-default.active  {
+        margin-left: 6.5rem !important;
+    }
+    
+    .button-az {
+        background-color: #ffffff;
+        border-radius: 20px;
+        border-color: #AAAAAA;
+        color: #AAAAAA;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        width: 4.4rem;
+    }
+    
+    .button-az.active {
+        background-color: #9DC08B;
+        border-radius: 20px;
+        border-color: #9DC08B;
+        color: white;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 12px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        width: 4.4rem;
+    }
+
+    .pilihan-menu{
+        padding-top: 1.5rem !important;
+    }
+    
+    .section-sidebar {
+        display: flex;
+        flex-wrap: nowrap !important;
+        padding-bottom: 1rem !important; 
+    }
+    
+    .button-sidebar {
+        background-color: #ffffff;
+        border-radius: 20px;
+        border-color: #AAAAAA;
+        color: #AAAAAA;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 8px !important;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        max-width: 6rem !important;
+        width: 100%;  
+        text-align: center !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .edit-icon {
+        cursor: pointer;
+        margin-left: 5px;
+        color: #AAAAAA;
+        width: 10px;
+    }
+    
+    .button-sidebar.active {
+        background-color: #9DC08B;
+        border-radius: 20px;
+        border-color: #9DC08B;
+        color: white;
+        padding:  0.3rem 1.15rem;
+        font-family: Verdana;
+        font-size: 10px;
+        margin-right: 0.5rem;
+        transition: box-shadow 0.5s ease;
+        max-width: 17rem;
+        width: 100%; 
+        text-align: left;
+    }
+
+    .section-card-dashboard{
+        border-radius: 1.875rem;
+        transition: transform 0.3s ease, height 0.3s ease;
+        max-width: 9.3rem !important;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .card-edit-text {
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        opacity: 0; 
+        visibility: hidden; 
+        white-space: nowrap;
+        transition: opacity 0.3s ease, visibility 0.3s ease; 
+        color: #9DC08B;
+        font-size: 10px !important ;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card-plus{
+        text-align: center;
+        font-size: 3rem !important;
+        font-weight: bolder;
+        color: #9DC08B;
+        transition: transform 0.3s ease;
+    }
+
+    .card-plus-text {
+        text-align: center;
+        font-size: 10px !important;
+        font-weight: 500;
+        color: #9DC08B; 
+        position: absolute;
+        top: calc(50% + 4rem);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .footer{
+        display: flex;
+        background-color: #9DC08B;
+        height: 100px !important;
+        text-align: center;
+        font-size: 1rem !important;
+        margin-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+  }
