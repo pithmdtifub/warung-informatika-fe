@@ -82,7 +82,8 @@ function AddMenuForm() {
           value={menuName}
           onChange={handleNameChange}
           required
-          placeholder="  Ketik disini"
+          placeholder="Ketik disini"
+          className='input-section'
         />
       </div>
       <div className='section'>
@@ -94,7 +95,8 @@ function AddMenuForm() {
           value={menuPrice}
           onChange={handlePriceChange}
           required
-          placeholder="  Ketik disini"
+          placeholder="Ketik disini"
+          className='input-section'
         />
       </div>
       <div className='section'>
@@ -168,7 +170,8 @@ function AddMenuForm() {
           value={menuDescription}
           onChange={handleDescriptionChange}
           required
-          placeholder="  Ketik disini"
+          placeholder="Ketik disini"
+          className='input-section'
         />
       </div>
       <div>
