@@ -7,9 +7,6 @@ import App from './App.jsx'
 import BagianLogin from './components/Login/HalamanLogin.jsx'
 import BagianDashboard from './BagianDashboard.jsx'
 
-// import BagianAtas from './components/DashboardAdmin/BagianAtas.jsx'
-// import BagianBawah from './components/DashboardAdmin/BagianBawah.jsx'
-
 const router = createBrowserRouter([
   {
     path: "/", element: <App/>,
@@ -27,8 +24,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-    {/* <App/> */}
-    {/* <BagianAtas />
-    <BagianBawah /> */}
   </StrictMode>
 )

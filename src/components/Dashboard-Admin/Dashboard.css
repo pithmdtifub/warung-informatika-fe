@@ -1,53 +1,14 @@
-.section-judul {
-    background-image: url('src/assets/kotak-putih-abu.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px 0;
-}
-
-.main-title{
-    font-size: 3rem;
-    padding-left: 3rem;
-}
-
-.semua-gambar{
-    padding-left: 3rem;
-}
-
-.gambar-bawah-navbar1{
-    width: 30px;
-    height: 50px;
-}
-
-.gambar-bawah-navbar2{
-    width: 58px;
-    height: 58px;
-}
-
-.gambar-bawah-navbar3{
-    width: 50px;
-    height: 50px;
-}
-
-.description{
-    font-weight: bold;
-    margin-top: 1rem;
-    text-align: justify;
-    padding-inline: 5rem;
-}
-
-.daftar-menu{
+.menu-list{
     padding-top: 5rem;
 }
 
-.judul-daftar-menu{
+.menu-list-title{
     font-size: 3rem;
     padding-bottom: 4rem;
     font-family: 'Pacifico';
 }
 
-.search {
+.search-bar {
     border: 2px solid #A2D2A4; 
     border-radius: 20px; 
     padding-left: 2.5rem; 
@@ -56,12 +17,12 @@
     box-sizing: border-box;
 }
 
-.input-icon-wrapper {
+.input-icon-wrapper-dashboard {
     position: relative; 
     width: 100%;
 }
 
-.icon-inside-input {
+.icon-inside-input-dashboard {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -69,14 +30,6 @@
     pointer-events: none;
     color: #AAAAAA !important;
     font-size: 1rem;;
-}
-
-.baris-filter{
-    display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    box-shadow: 0 3px 1px -2px #AAAAAA; 
-    border-top: 1px solid #AAAAAA;
 }
 
 .button-default {
@@ -149,46 +102,142 @@
     padding:  0.3rem 1.15rem;
     font-family: Verdana;
     font-size: 18px;
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
     transition: box-shadow 0.5s ease;
-    max-width: 17rem;
+    max-width: 20rem;
     width: 100%; 
     text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .button-sidebar.active {
     background-color: #9DC08B;
-    border-radius: 20px;
     border-color: #9DC08B;
     color: white;
-    padding:  0.3rem 1.15rem;
-    font-family: Verdana;
-    font-size: 18px;
-    margin-right: 0.5rem;
-    transition: box-shadow 0.5s ease;
-    max-width: 17rem;
-    width: 100%; 
-    text-align: left;
 }
 
-/* Bagian card */
-.section-card{
+.edit-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #AAAAAA;
+    width: 15px;
+}
+
+.button-sidebar.active .edit-icon {
+    color: #FFFFFF;
+}
+
+.button-sidebar .edit-icon:active {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* Card */
+.section-card-dashboard{
     border-radius: 1.875rem;
     transition: transform 0.3s ease, height 0.3s ease;
+    max-height: 20rem;
+    height: auto;
+    cursor: pointer;
+    position: relative;
 }
 
-.section-card.active {
+.section-card-dashboard.active {
     height: auto; 
+    border: 2px solid #007bff;
 }
 
-.section-card:hover:not(.active) {
-    transform: scale(1.03);
-  }
+.section-card-dashboard .card-title, .section-card-dashboard .card-price, .section-card-dashboard .card-description, .section-card-dashboard .img-card {
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+
+.section-card-dashboard:hover .card-title, .section-card-dashboard:hover .card-price, .section-card-dashboard:hover .card-description, .section-card-dashboard:hover .img-card {
+    opacity: 0.2; 
+    filter: blur(2px);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.section-card-dashboard:hover .card-plus, .section-card-dashboard:hover .card-plus-text {
+  opacity: 1 !important; 
+  filter: blur(0) !important; 
+}
+
+.card-edit-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    visibility: hidden; 
+    white-space: nowrap;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    color: #9DC08B;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-card-dashboard:hover .card-edit-text {
+    opacity: 1; 
+    visibility: visible; 
+}
   
-.section-card.active {
-    border: 2px solid #007bff;
-  }
+
+.section-card-dashboard:hover .card-edit-text {
+    opacity: 1; 
+    visibility: visible;
+}
+
+.section-card-dashboard:hover:not(.active) {
+    transform: scale(1.03);
+}
+
+.section-card-plus:hover .card-plus {
+    transform: scale(1.2); 
+}
+  
+.section-card-plus:hover .card-plus-text {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.section-card-plus{
+    height: 100%;
+    cursor: pointer;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 20rem;
+}
+
+.card-plus{
+    text-align: center;
+    font-size: 6rem !important;
+    font-weight: bolder;
+    color: #9DC08B;
+    transition: transform 0.3s ease;
+}
+
+.card-plus-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9DC08B; 
+    position: absolute;
+    top: calc(50% + 7rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
 .img-card {
     width: 100%;
@@ -196,7 +245,7 @@
     object-fit: cover;
     border-top-left-radius: 1.875rem;
     border-top-right-radius: 1.875rem;
-  }
+}
 
 .card-title{
     font-size: 20px;
@@ -218,13 +267,13 @@
     display: block;
 }
 
-.section-card.active .card-description {
+.section-card-dashboard.active .card-description {
     white-space: normal; 
     overflow: visible; 
-    text-overflow: unset; 
+    text-overflow: unset;
 }
 
-/* Bagian footer */
+/* Footer */
 .footer{
     display: flex;
     background-color: #9DC08B;
@@ -237,26 +286,13 @@
     color: white;
 }
 
+
 @media (max-width: 480px) {
-    .main-title{
-        font-size: 2rem;
-        padding-left: 20px;
-    }
-
-    .description{
-        font-weight: bold;
-        font-size: 13px;
-        margin-top: 1rem;
-        text-align: center;
-        padding-left: 30px !important;
-        padding-inline: 0.5rem;
-    }
-
-    .daftar-menu{
+    .menu-list{
         padding-top: 3rem;
     }
     
-    .judul-daftar-menu{
+    .menu-list-title{
         font-size: 2rem;
         padding-bottom: 1rem;
         font-family: 'Pacifico';
@@ -271,7 +307,7 @@
         border-top: none !important;
     }
 
-    .search {
+    .search-bar {
         border: 2px solid #A2D2A4;
         border-radius: 20px;
         padding-left: 2.5rem; 
@@ -281,7 +317,7 @@
         margin-top: 1rem;
     }
 
-    .icon-inside-input {
+    .icon-inside-input-dashboard {
         position: absolute;
         left: 10px;
         top: 65%;
@@ -368,13 +404,20 @@
         color: #AAAAAA;
         padding:  0.3rem 1.15rem;
         font-family: Verdana;
-        font-size: 10px !important;
+        font-size: 8px !important;
         margin-right: 0.5rem;
         transition: box-shadow 0.5s ease;
-        max-width: 5rem !important;
+        max-width: 6rem !important;
         width: 100%;  
         text-align: center !important;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .edit-icon {
+        cursor: pointer;
+        margin-left: 5px;
+        color: #AAAAAA;
+        width: 10px;
     }
     
     .button-sidebar.active {
@@ -384,7 +427,7 @@
         color: white;
         padding:  0.3rem 1.15rem;
         font-family: Verdana;
-        font-size: 18px;
+        font-size: 10px;
         margin-right: 0.5rem;
         transition: box-shadow 0.5s ease;
         max-width: 17rem;
@@ -392,56 +435,67 @@
         text-align: left;
     }
 
-    .section-card{
+    .section-card-dashboard{
         border-radius: 1.875rem;
         transition: transform 0.3s ease, height 0.3s ease;
-        max-width: 9.5rem !important;
+        max-width: 9.3rem !important;
+        cursor: pointer;
+        position: relative;
     }
-    
-    .section-card.active {
-        height: auto; 
+
+    .section-card-plus{
+        height: 100%;
+        cursor: pointer;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        min-height: 12rem;
     }
-    
-    .section-card:hover:not(.active) {
-        transform: scale(1.03);
-      }
-      
-    .section-card.active {
-        border: 2px solid #007bff;
-      }
-    
+
+    .card-edit-text {
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        opacity: 0; 
+        visibility: hidden; 
+        white-space: nowrap;
+        transition: opacity 0.3s ease, visibility 0.3s ease; 
+        color: #9DC08B;
+        font-size: 10px !important ;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card-plus{
+        text-align: center;
+        font-size: 3rem !important;
+        font-weight: bolder;
+        color: #9DC08B;
+        transition: transform 0.3s ease;
+    }
+
+    .card-plus-text {
+        text-align: center;
+        font-size: 10px !important;
+        font-weight: 500;
+        color: #9DC08B; 
+        position: absolute;
+        top: calc(50% + 4rem);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
     .img-card {
-        width: 100%;
-        max-height: 5rem !important;
+        width: 180px !important;
+        max-height: 130px !important;
         object-fit: cover;
         border-top-left-radius: 1.875rem;
         border-top-right-radius: 1.875rem;
-      }
-    
-    .card-title{
-        font-size: 12px !important;
-    }
-    
-    .card-price{
-        font-size: 10px !important;
-        color: #609966;
-        margin: 0;
-    }
-    
-    .card-description{
-        font-size: 8px !important;
-        color: #AAAAAA;
-        padding: 0;
-        white-space: normal;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: block;
-    }
-    
-    .section-card.active .card-description {
-        white-space: normal; 
-        overflow: visible; 
-        text-overflow: unset; 
     }
 
     .footer{

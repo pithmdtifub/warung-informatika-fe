@@ -34,31 +34,31 @@
     color: #000000;
 }
 
-.input-email-pw{
-    margin-top: 1rem;
+.input-usn-pw{ 
     margin-bottom: 1rem;
     border-radius: 30px;
-    border-width: 2px;
+    border-width: 2px; 
     border-color: #133E87;;
     font-family: "Poppins";
+    padding-right: 4.2rem;
 }
 
 .button-submit{
+    padding-inline: 1.3rem;
     border-radius: 30px;
     background-color: #9DC08B;
     border-color: #9DC08B;
     font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: bold;
     display: block;
     margin: auto;
+    margin-bottom: 2.5rem;
 }
 
 .input-icon-wrapper {
     position: relative;
     width: 100%;
-}
-
-.input-email-pw {
-    padding-right: 40px;
 }
 
 .icon-inside-input-halaman-login {
@@ -67,6 +67,18 @@
     top: 50%;
     transform: translateY(-50%);
     color: #133E87;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.user-icon {
     pointer-events: none;
+}
+
+.text-error{
+    color: red;
+    margin-top: 0 !important;
+    font-size: 0.8rem;
+    text-align: center;
 }
   
